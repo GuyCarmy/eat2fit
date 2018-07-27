@@ -13,6 +13,10 @@ namespace eat2fit.Models
 		private string name;
 		[BsonElement("Name")]
 		public string Name { get { return name; } set { name = value; } }
+
+		private string password;
+		[BsonElement("Password")]
+		public string Password { get => password; set { password = value; } }
 		private string details;
 		[BsonElement("Details")]
 		public string Details { get => details; }

@@ -71,6 +71,29 @@ namespace eat2fit.Services
 			}
 		}
 
+		public async Task<Customer> GetCustomerIfPasswordVerified(string name, string pass)
+		{
+			try
+			{
+				var v = await CustomersCollection.Find(x => x.Name == name).FirstAsync() ;
+				Customer customer;
+				if (v is Customer)
+				{
+					customer = v as Customer;
+					if (customer.Password == pass)
+					{
+						return customer;
+					}
+				}
+				else { System.Diagnostics.Debug.WriteLine("error, returned not customer in GetCustomer in MongoService"); }
+			}
+			catch (Exception ex)
+			{
+				System.Diagnostics.Debug.WriteLine(ex.Message);
+			}
+			return null;
+		}
+
 		public async Task<List<Customer>> GetAllCustomers()
 		{
 			try
