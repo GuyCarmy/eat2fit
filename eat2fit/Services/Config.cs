@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace eat2fitDesktop.Services
+namespace eat2fit.Services
 {
     class Config
     {

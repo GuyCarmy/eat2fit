@@ -4,7 +4,7 @@ using System.Text;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
 
-namespace eat2fitDesktop.Models
+namespace eat2fit.Models
 {
     public class Customer
     {

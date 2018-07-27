@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using MongoDB.Driver;
-using eat2fitDesktop.Models;
+using eat2fit.Models;
 using System.Security.Authentication;
 using System.Threading.Tasks;
 using MongoDB.Bson;
 
-namespace eat2fitDesktop.Services
+namespace eat2fit.Services
 {
-    class MongoService
+    public class MongoService
     {
 		string dbName = "eat2fit";
 
