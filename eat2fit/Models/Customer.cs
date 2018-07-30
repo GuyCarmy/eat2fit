@@ -39,6 +39,10 @@ namespace eat2fit.Models
 		{
 					suggestedDiet.Add(meal);
 		}
+		public void AddEatedMeal(Meal meal)
+		{
+			eatedDiet.Add(meal);
+		}
 
 		public Customer()
 		{

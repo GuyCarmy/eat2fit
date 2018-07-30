@@ -22,7 +22,7 @@ namespace eat2fit.Models
 			{
 				if (!String.IsNullOrEmpty(value))
 				{
-					name = value;
+					name = value.ToLower();
 				}
 			}
 		}
