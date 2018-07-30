@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using eat2fit.Services;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
 
@@ -15,6 +16,7 @@ namespace eat2fit.Models
 		private string name;
 		[BsonElement("Name")]
 		public string Name { get => name; }
+
 
 		[BsonElement("Foods")]
 		public List<Food> Foods { get; set; }

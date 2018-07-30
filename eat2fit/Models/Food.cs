@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using eat2fit.Services;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.IdGenerators;
 
@@ -26,6 +27,9 @@ namespace eat2fit.Models
 				}
 			}
 		}
+
+		[BsonElement("NameTitle")]
+		public string NameTitle { get => Base.ToTitleCase(name); }
 
 		private string details;
 		[BsonElement("Details")]
