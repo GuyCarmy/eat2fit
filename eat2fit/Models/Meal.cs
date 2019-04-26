@@ -34,7 +34,7 @@ namespace eat2fit.Models
 			set
 			{
 				time = value;
-				// time is kept in minutes sense midnight. either TimeSpan or DateTime fits right for this usage, so I went for the simplest solution.
+				// time is kept in minutes sense midnight. neither TimeSpan or DateTime fits right for this usage, so I went for the simplest solution.
 				int mealMin = value % 60;
 				int mealHr = value / 60;
 				int cal = 0;
