@@ -30,10 +30,10 @@ namespace eat2fit.Models
 		}
 		private List<Meal> suggestedDiet;
 		[BsonElement("SuggestedDeit")]
-		public List<Meal> SuggestedDiet { get { return suggestedDiet; } }
+		public List<Meal> SuggestedDiet { get { return suggestedDiet; } set { suggestedDiet = value; } }
 		private List<Meal> eatedDiet;
 		[BsonElement("EatedDeit")]
-		public List<Meal> EatedDiet { get { return eatedDiet; } }
+		public List<Meal> EatedDiet { get { return eatedDiet; } set { eatedDiet = value; } }
 
 		public void AddSuggestedMeal(Meal meal)
 		{
