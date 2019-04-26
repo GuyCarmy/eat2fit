@@ -140,12 +140,6 @@ namespace eat2fit.Services
 		{
 			await CustomersCollection.ReplaceOneAsync(t => t.Id.Equals(customer.Id), customer);
 		}
-		/*
-		public async Task DeleteTask(MyTask task)
-		{
-			await TasksCollection.DeleteOneAsync(t => t.Id.Equals(task.Id));
-		}
-		*/
 
 	}
 }
