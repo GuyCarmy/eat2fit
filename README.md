@@ -1,5 +1,5 @@
 
-My final project in c# for object oriented programming, Course #20586 of the open university of Israel.
+My final project in C# for object oriented programming, Course #20586 of the open university of Israel.
 
 Its a program for dietitions to manage the diets for their clients. The project is wrttien using xamarin, and using MongoDB. 
 
